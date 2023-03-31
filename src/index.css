@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.active{
+  scale: 1.2;
+}
+/*.css-sghohy-MuiButtonBase-root-MuiButton-root {
+   font-family: "Raleway";
+  text-transform: "none"!important;
+  font-weight: 000 !important;
+  color: "white"!important;
+}   */
+/* .main:hover{
+  scale: 1.2;
+  color: rgb(241, 14, 14) !important;
+} */
+.menu:hover{
+  background-color: "#0B72B9";
+  color: white;
+  scale: 1.5;
+}
