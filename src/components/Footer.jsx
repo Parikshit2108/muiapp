@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
   iconStyle: {
     position: "absolute",
-    marginTop: "-6em",
+    marginTop: "-4.5em",
     right: "1.5em",
     [theme.breakpoints.down("sm")]: {
       right: "0.6em",

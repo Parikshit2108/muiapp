@@ -3,17 +3,7 @@ import Lottie from "react-lottie";
 import CallToAction from "./CallToAction";
 import { makeStyles } from "@mui/styles";
 
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  Grid,
-  IconButton,
-  Typography,
-  Hidden,
-  useTheme,
-} from "@mui/material";
+import { Grid, IconButton, Typography, Hidden, useTheme } from "@mui/material";
 import lightBulb from "../../assets/bulb.svg";
 import cash from "../../assets/cash.svg";
 import { useMediaQuery } from "@mui/material";
@@ -113,7 +103,7 @@ export default function CustomSoftware() {
         container
         direction={"column"}
         // className={classes.rowContainer}
-        // justifyContent={matchesXS ? "center" : undefined}
+        justifyContent={matchesXS ? "center" : "right"}
       >
         {/*====================================Custom Software Developement=================================== */}
         <Grid
@@ -210,6 +200,7 @@ export default function CustomSoftware() {
           direction={"row"}
           sx={{ mt: "15em", mb: "10em" }}
           className={classes.rowContainer}
+          textAlign="center"
         >
           <Grid
             item

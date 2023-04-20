@@ -29,3 +29,20 @@ code {
   color: white;
   scale: 1.5;
 }
+.main{
+  /* max-width: 40em !important; */
+}
+.css-1lifpgl-MuiGrid-root{
+  height: 92em !important;
+}
+.designImg{
+  max-width: 40em;
+}
+.MuiInput-root{
+  color: #0B72B9 !important;
+  font-size: 1rem;
+  font-weight: 300;
+}
+/* .MuiFormControl-root-MuiTextField-root-makeStyles-message-16-msgBorder{
+  border: "2px solid #0B72B9" !important;
+} */

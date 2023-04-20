@@ -1,14 +1,18 @@
 import "./App.css";
 import Header from "./components/ui/Header";
 import { ThemeProvider } from "@mui/material/styles";
-// import { theme } from "./components/ui/Theme.jsx";
 import { Route, Routes } from "react-router-dom";
-
 import { createTheme } from "@mui/material/styles";
+
 import Footer from "./components/Footer";
 import LandingPage from "./components/ui/LandingPage";
 import Services from "./components/ui/Services";
 import CustomSoftware from "./components/ui/CustomSoftware";
+import MobileApps from "./components/ui/MobileApps";
+import Websites from "./components/ui/Websites";
+import Revolution from "./components/ui/Revolution";
+import About from "./components/ui/About";
+import Contact from "./components/ui/Contact";
 
 const arcBlue = `#0B72B9`;
 const arcOrange = "#FFBA60";
@@ -74,19 +78,46 @@ const theme = createTheme({
       color: "grey",
       fontweight: 300,
     },
-    // learnButton: {
-    //   marginRight: 40,
-    //   borderWidth: 2,
-    //   textTransform: "none",
-    //   fontFamily: "Roboto",
-    //   fontWeight: "bold",
-    //   borderRadius: 50,
-    //   backgroundColor: "#FFBA60",
-    //   color: arcBlue,
-    //   borderColor: arcBlue,
-    //   // marginTop: "1em",
-    // },
+    caption: {
+      fontSize: "1 rem",
+      fontWeight: 300,
+      color: "gray",
+    },
   },
+  overrides: {
+    MuiInputLabel: {
+      root: {
+        // color: "grey",
+        // fontSize: "1rem",
+      },
+    },
+    MuiInput: {
+      "&..css-1u3bzj6-MuiFormControl-root-MuiTextField-root": {
+        // color: "grey",
+        // fontSize: "1rem",
+      },
+      underline: {
+        "&:before": {
+          borderBottom: `2px solid ${arcBlue}`,
+        },
+        "&:hover:not:($disabled):not($focused}:not($error):before": {
+          borderBottom: `2px solid ${arcBlue}`,
+        },
+      },
+    },
+  },
+  // learnButton: {
+  //   marginRight: 40,
+  //   borderWidth: 2,
+  //   textTransform: "none",
+  //   fontFamily: "Roboto",
+  //   fontWeight: "bold",
+  //   borderRadius: 50,
+  //   backgroundColor: "#FFBA60",
+  //   color: arcBlue,
+  //   borderColor: arcBlue,
+  //   // marginTop: "1em",
+  // },
 });
 
 function App() {
@@ -99,11 +130,11 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/services" element={<Services />} />
           <Route path="/costomsoftware" element={<CustomSoftware />} />
-          <Route path="/mobileapps" element={<div>mobileapps</div>} />
-          <Route path="/websites" element={<div>websites</div>} />
-          <Route path="/revolution" element={<div>revolution</div>} />
-          <Route path="/about" element={<div>about</div>} />
-          <Route path="/contact" element={<div>contact</div>} />
+          <Route path="/mobileapps" element={<MobileApps />} />
+          <Route path="/websites" element={<Websites />} />
+          <Route path="/revolution" element={<Revolution />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/estimate" element={<div>estimate</div>} />
         </Routes>
 
