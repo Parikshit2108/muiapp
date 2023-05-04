@@ -1,0 +1,40 @@
+{
+  "name": "material-next",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "postbuild":"node scripts/sitemap.js"
+
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "^11.10.8",
+    "@emotion/server": "latest",
+    "@emotion/styled": "^11.10.8",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.3",
+    "@mui/styles": "^5.12.3",
+    "axios": "^1.4.0",
+    "fs-extra": "^11.1.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "install": "^0.13.0",
+    "lodash": "^4.17.21",
+    "next": "^13.3.5-canary.5",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
+    "npm": "^9.6.5",
+    "prop-types": "latest",
+    "react-dom": "latest",
+    "react-lottie": "^1.2.3"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-next": "latest"
+  }
+}
