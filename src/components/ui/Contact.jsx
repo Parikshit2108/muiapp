@@ -335,6 +335,7 @@ export default function Contact(props) {
                   variant="standard"
                   value={input.message}
                   id="message"
+                  placeholder="Tell us more about your project"
                   multiline
                   className={`${classes.message} msgBorde`}
                   rows={10}
@@ -364,7 +365,7 @@ export default function Contact(props) {
         {/* Dialog Box */}
         <Dialog
           open={dialogOpen}
-          //   fullScreen={matchesXS}
+          fullScreen={matchesSM}
           onClose={(e) => {
             setDialogOpen(false);
           }}
@@ -373,8 +374,8 @@ export default function Contact(props) {
             sx: {
               pt: { xs: "1em", sm: "5em" },
               pb: { xs: "1em", sm: "5em" },
-              pl: { xs: 0, sm: "5em", md: "10", lg: "20em" },
-              pr: { xs: 0, sm: "5em", md: "10", lg: "20em" },
+              pl: { xs: 0, sm: "5em", md: "15", lg: "25em" },
+              pr: { xs: 0, sm: "5em", md: "15", lg: "25em" },
             },
           }}
         >
@@ -441,7 +442,7 @@ export default function Contact(props) {
               </Grid>
             </Grid>
             {/* message */}
-            <Grid item sx={{ maxWidth: matchesXS ? "100%" : "20em" }}>
+            <Grid item sx={{ width: matchesSM ? "100%" : "20em" }}>
               <TextField
                 InputProps={{ disableUnderline: true }}
                 variant="standard"

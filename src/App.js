@@ -13,6 +13,7 @@ import Websites from "./components/ui/Websites";
 import Revolution from "./components/ui/Revolution";
 import About from "./components/ui/About";
 import Contact from "./components/ui/Contact";
+import Estimate from "./components/ui/Estimate";
 
 const arcBlue = `#0B72B9`;
 const arcOrange = "#FFBA60";
@@ -83,6 +84,12 @@ const theme = createTheme({
       fontWeight: 300,
       color: "gray",
     },
+    h6: {
+      fontweight: 300,
+      fontFamily: "Raleway",
+      color: arcBlue,
+      lineHeight: 1,
+    },
   },
   overrides: {
     MuiInputLabel: {
@@ -135,7 +142,7 @@ function App() {
           <Route path="/revolution" element={<Revolution />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/estimate" element={<div>estimate</div>} />
+          <Route path="/estimate" element={<Estimate />} />
         </Routes>
 
         <Footer />
